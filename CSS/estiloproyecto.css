@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+     background-image: url(../imag/fondo3.jpg);
+     background-size: cover;
+     /* background-position: 200% auto; */
+ }
+
+ header{
+    /* background-color:oldlace; */
+    /* background-image: url(../imag/fondo.jpg); */
+    /* height: 90px; */
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.h1logo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+   }
+/* .logo {
+    width: 50%;
+    display: flex;
+}
+.imgLogo{
+    margin: 20px;
+    width: 90%;
+    height: 100px;
+} */
+.imgLogo img {
+    width: 30%;
+    display: flex;
+}
+.wss {
+    display: none;
+
+}
+h1{
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    /* line-height: 100px; */
+}
+nav {
+    width: 50%;
+    margin-bottom: 20px;
+}
+h2 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.imginicio{
+    height: 300px;
+    width: 100%;
+}
+.caja{
+    width: 90%;
+    height: 40vh;
+    margin: 0 auto;
+    border: white solid 10px;
+    margin-bottom: 1rem;
+    transition-duration: 1s;
+}
+.caja:hover{
+    transform: scale(1.1);
+}
+.caja1{
+    grid-column: 1/2;
+    grid-row: 1;
+    background-image: url(../imag/imghtml.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.caja2{
+    grid-column: 2;
+    grid-row: 1/2;
+    background-image: url(../imag/chicahtml.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.caja3{
+  grid-row: 2;
+  grid-column: 2;
+  background-image: url(../imag/remera.jpg);
+  background-size: cover;
+    background-position: center;
+}
+/* .caja4{
+    grid-row: 2; 
+    grid-column: auto;
+    background-image: url(../imag/pollera.jpg);
+    background-size: cover;
+    background-position: center;
+} */
+footer{
+    text-align: center;
+    margin: 50px;
+    border: solid lightpink 5px;
+}
+.instagram{
+    /* top: 35em; */
+    /* left: 200em; */
+    width: 10%;
+    /* height: 40px; */
+ }
+
+@media only screen and (min-width: 481px) {
+    h1 {
+        display: block;
+    }
+    .logo {
+        width: 70%;
+    }
+    .imgLogo {
+        width: 70%;
+    }
+    nav {
+        width: 30%;
+    }
+
+
+}
+@media only screen and (min-width: 769px) {
+
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .caja {
+        width: 40%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .caja{
+        margin: 10px auto;
+    }
+}
+@media only screen and (min-width: 1024px) {
+   .contenedor{
+       grid-template-columns: repeat(3, 1fr);
+   }
+.caja{
+    margin-top: 100px;
+       display: flex;
+       height: 500px;
+     width: 35%;
+    justify-content: space-between;
+    padding: 20px;
+    }
+   header{
+      display: flex;
+      position: fixed;
+      height: 60px;
+      background-color: rgb(255, 204, 235);
+      /* border: solid rgb(202, 57, 171); */
+      width: 100%;
+   }
+  nav{height: 60px;
+      width: 42%;
+      /* color: white; */
+  }
+   .h1logo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 30px;
+   }
+ .navbar-nav{
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    color: white;
+ }
+ .container-fluid{
+     height: 60px;
+ }
+ .imginicio{
+     height: 650px;
+     width: 100%;
+ }
+ .imgabajo{
+     display: flex;
+     width: 60%;
+     margin: 100px;
+     margin-left: 300px;
+     justify-content: space-between;
+ }
+.wss{
+    display: flex;
+    position: fixed;
+    top: 35em;
+    left: 80em;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.subtitulo{
+    margin: 30px;
+}
+footer{
+    text-align: center;
+    margin: 50px;
+    border: solid lightpink 5px;
+ }
+ .instagram{
+    /* top: 35em; */
+    /* left: 200em; */
+    width: 3%;
+    /* height: 40px; */
+ }
+}

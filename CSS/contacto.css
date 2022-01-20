@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ body{
+     background-image: url(../imag/fondo3.jpg);
+     background-size: cover;
+     /* background-position: 200% auto; */
+ }
+
+ header{
+    /* background-color:oldlace; */
+    /* background-image: url(../imag/fondo.jpg); */
+    /* height: 90px; */
+    font-family: 'Russo One', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.h1logo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+   }
+/* .logo {
+    width: 50%;
+    display: flex;
+}
+.imgLogo{
+    margin: 20px;
+    width: 90%;
+    height: 100px;
+} */
+.imgLogo img {
+    width: 30%;
+    display: flex;
+}
+.wss {
+    display: none;
+
+}
+h1{
+    display: flex;
+    font-family: 'Russo One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    /* line-height: 100px; */
+}
+nav {
+    width: 50%;
+    margin-bottom: 20px;
+}
+/* h2{
+   background-color: lightpink;
+   height: 100px;
+   text-align: center;
+   line-height: 100px;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+footer{
+    text-align: center;
+    margin: 50px;
+    border: solid lightpink 5px;
+ }
+form{
+    font-size: 12px;
+	width: 100%;
+	padding:16px;
+	border-radius:10px;
+	margin: auto;
+	background-color:#ccc;
+}
+form label{
+	width: auto;
+	font-weight:bold;
+	display:inline-block;
+}
+.h2form{
+    font-size: 20px;
+    color: rgb(255, 95, 234);
+}
+h4{
+    font-size: 20px;
+    color: rgb(255, 95, 234);
+}
+form input[type="submit"]{
+	width: 100%;
+    padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+ form input[type="reset"]{
+	width:100%;
+    padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+form input[type="reset"]:hover{
+	cursor:pointer;
+}.instagram{
+    /* top: 35em; */
+    /* left: 200em; */
+    width: 10%;
+    /* height: 40px; */
+ }
+@media only screen and (min-width: 481px) {
+    h1 {
+        display: block;
+    }
+    .logo {
+        width: 70%;
+    }
+    .imgLogo {
+        width: 70%;
+    }
+    nav {
+        width: 30%;
+    }
+
+
+}
+@media only screen and (min-width: 769px) {
+
+    .contenedor {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main h2{
+        text-align: center;
+    }
+    section{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (min-width: 1024px) {
+   header{
+      display: flex;
+      height: 60px;
+      background-color: rgb(255, 204, 235);
+      width: 100%;
+   }
+  nav{height: 60px;
+      width: 42%;
+      color: white;
+  }
+   .h1logo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 2em;
+    letter-spacing: 1.5px;
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    margin: 10px;
+    padding-left: 30px;
+   }
+ .navbar-nav{
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+ }
+ .container-fluid{
+     height: 60px;
+ }
+.wss{
+    display: flex;
+    position: fixed;
+    top: 35em;
+    left: 80em;
+    width: 40px;
+    height: 40px;
+    border: none;
+}   
+main{
+    margin: 30px;
+}
+.h2form{
+    font-size: 30px;
+    color: rgb(255, 95, 234);
+}
+h4{
+    font-size: 30px;
+    color: rgb(255, 95, 234);
+}
+form{
+	width: 500px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+form label{
+	width: auto;
+	font-weight:bold;
+	display:inline-block;
+}
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+form input[type="reset"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+}
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+form input[type="reset"]:hover{
+	cursor:pointer;
+}
+footer{
+    text-align: center;
+    margin: 50px;
+    border: solid lightpink 5px;
+ }
+ .instagram{
+    /* top: 35em; */
+    /* left: 200em; */
+    width: 3%;
+    /* height: 40px; */
+ }
+}
